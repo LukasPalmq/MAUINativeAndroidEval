@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_exjobb.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <StackLayout
+                Spacing="45"
+                Padding="20,0">
+                <Button x:Name="btnMultithread" Text="Multithread" Clicked="OnMultithreadedTaskClicked"/>
+                <Button x:Name="btnFileReadWrite" Text="File Operations" Clicked="OnFileReadWriteClicked"/>
+                <Button x:Name="btnGps" Text="GPS" Clicked="OnCalculateGpsClicked" />
+                <Button Text="Go to Second Page"
+                        Clicked="OnButtonClicked"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand" />
+                <Button x:Name="btnDownload" Text="Download File" Clicked="OnButtonDownloadClicked" />
+            </StackLayout>
+
+</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

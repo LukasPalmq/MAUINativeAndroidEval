@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_exjobb.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_exjobb"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <Tab Title="Home">
+            <ShellContent>
+                <local:MainPage></local:MainPage>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Scroll-List">
+            <ShellContent>
+                <local:ListPage></local:ListPage>
+            </ShellContent>
+        </Tab>
+    </TabBar>
+
+</Shell>
